@@ -163,9 +163,9 @@
         </dependency>
 
         <dependency>
-            <groupId>com.github.qwertyuioplkjhgfd</groupId>
+            <groupId>com.github.slimefunguguproject</groupId>
             <artifactId>AdvancementAPI</artifactId>
-            <version>f243bdaf75</version>
+            <version>3a2ece1ace</version>
             <scope>compile</scope>
         </dependency>
 
