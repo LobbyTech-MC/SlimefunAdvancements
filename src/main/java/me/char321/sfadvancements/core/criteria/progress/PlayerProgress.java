@@ -53,8 +53,13 @@ public class PlayerProgress {
         File f = new File(advancementsFolder, player.toString() + ".json");
         if (f.exists()) {
             try {
-                JsonObject object = JsonParser.parseReader(new BufferedReader(new InputStreamReader(new FileInputStream(f), StandardCharsets.UTF_8))).getAsJsonObject();
-                res.loadFromObject(object);
+                JsonElement element = JsonParser.parseReader(new BufferedReader(new InputStreamReader(new FileInputStream(f), StandardCharsets.UTF_8)));
+                if (element != null) {
+                	JsonObject object = element.getAsJsonObject();
+                	res.loadFromObject(object);
+                }
+                		
+                
             } catch (IOException e) {
                 SFAdvancements.logger().log(Level.SEVERE, "读取进度时发生错误", e);
             }
