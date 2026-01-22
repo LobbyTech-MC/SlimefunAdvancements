@@ -165,7 +165,7 @@
         <dependency>
             <groupId>com.github.slimefunguguproject</groupId>
             <artifactId>AdvancementAPI</artifactId>
-            <version>3a2ece1ace</version>
+            <version>master-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
 
