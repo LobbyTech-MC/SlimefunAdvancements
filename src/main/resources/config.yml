@@ -1,7 +1,7 @@
 # 启用自动更新
 auto-update: true
 
-# 将自定义进度添加到原版进度菜单中 (实验性功能)
+# 将自定义进度添加到原版进度菜单中 (实验性功能) 与sensibletoolbox 原版合成不兼容 导致STB原版物品无法合成
 use-advancements-api: false
 
 # 在聊天栏中展示进度达成消息
